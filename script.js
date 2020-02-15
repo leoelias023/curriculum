@@ -3,6 +3,7 @@
     setPercent("pReact", "70%");
     setPercent("pReactNative", "65%");
     setPercent("pJava", "60%");
+    setPercent("pPython", "70%");
 
 const buttonNavAside = document.getElementById("btn-top");
 function toggleMenu(){
