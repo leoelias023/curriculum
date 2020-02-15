@@ -1,0 +1,310 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+html, body {
+    background-color: #1F2125;
+    min-height: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.subtitle-color {
+    color: rgb(185, 185, 185);
+}
+
+.white-sp {
+    color: rgb(230, 230, 230);
+}
+
+.d-text {
+    color: #43A44F;
+}
+
+.red-text {
+    color: #EC3857;
+}
+
+/* end reset */
+
+
+.bottom-bar-nav {
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    transition: height 0.3s;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.center-nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(20, 20, 20);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btn-top {
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-top i {
+    font-size: 2em;
+    color: rgb(66, 214, 36);
+}
+
+.main-content {
+    position: relative;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+    animation: slug-element 1s;
+}
+
+.header-description {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-scam {
+    margin: 0 30px;
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid #EC3857;
+}
+
+.about-me {
+    margin-top: 50px;
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    padding: 30px;
+}
+
+.text-about-me {
+    text-indent: 1.5em;
+    margin: 15px 30px;
+    font-size: 1.2em;
+}
+
+.techs-me {
+    padding: 30px;
+}
+
+.box-techs {
+    margin: 30px 0;
+    width: 100%;
+    height: 300px;
+}
+
+.tech-item {
+    width: 80%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.progress-bar {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2.5px;
+}
+
+.progress-bar-loaded {
+    height: 23px;
+    width: 80%;
+    background-color: rgb(63, 207, 50);
+    border-radius: 30px;
+}
+
+.name-tech {
+    font-size: 1.1em;
+}
+
+.academic-formation {
+    margin: 30px;
+}
+
+.item-formation {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 20px;
+}
+
+.title-formation {
+    font-size: 1.5em;
+    margin-bottom: 7px;
+}
+
+.ligation-formation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.academic-title {
+    margin-bottom: 50px;
+}
+
+.ligation {
+    background-color: rgb(24, 24, 24);
+    width: 10px;
+    height: 50px;
+    margin-right: 20%;
+}
+
+.contact-me {
+    margin: 30px;
+}
+
+.row-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.item-contact {
+    margin: 20px;
+    font-size: 4em;
+    cursor: pointer;
+    color: rgb(238, 238, 238);
+}
+
+.item-contact:hover {
+    color: rgb(56, 56, 56);
+}
+
+.title-contact {
+    margin-bottom: 30px;
+}
+
+.icon-virta {
+    margin: 15px;
+    animation: virta 3s infinite;
+}
+
+.projects-me {
+    margin: 30px;
+}
+
+.list-projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item-project {
+    background-color: rgb(65, 65, 65);
+    max-width: 300px;
+    width: 300px;
+    height: 150px;
+    max-height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 900;
+    margin: 20px;
+    background-blend-mode: overlay;
+    background-size: 100%;
+}
+
+#pro-devradar {
+    background-image: url('./img/dev-radar.png');
+}
+
+#pro-organic {
+    background-image: url('./img/organic-read.png');
+}
+
+.project-title {
+    margin-bottom: 25px;
+}
+
+
+@keyframes virta {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(360deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes slug-element {
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 418px) {
+    .header-description {
+        flex-direction: column;
+    }
+    .name-professional {
+        margin-top: 30px;
+    }
+    .row-contacts {
+        justify-content: center;
+    }
+    .techs-me {
+        padding: 40px 30px;
+    }
+    .about-me {
+        padding: 10px 5px 30px 5px;
+    }
+    .about-me h2 {
+        margin: 30px 30px 5px 30px;
+    }
+    .about-me span {
+        margin: 20px;
+    }
+    .contact-me {
+        margin-top: 60px;
+    }
+}
